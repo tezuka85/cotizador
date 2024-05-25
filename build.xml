@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cotizaciones" default="build">
+    <target name="build" depends="prepare, composerDeploy,composer,composerAutoload"/>
+    <target name="build-parallel" depends="prepare"/>
+    <!-- borra carpetas -->
+    <target name="clean" description="Cleanup build artifacts">
+        <delete dir="${basedir}/vendor"/>
+    </target>
+    <target name="prepare" depends="clean" description="Prepare for build">
+        <mkdir dir="${basedir}/vendor"/>
+        <mkdir dir="/var/log/php-fpm/cotizaciones/storage/logs"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/bootstrap"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/bootstrap/cache"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/debugbar/app/public"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/framework/views"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/framework/sessions"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/framework/cache"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/framework/cache/data"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/framework/testing"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/debugbar"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/app"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/app/public"/>
+        <mkdir dir="/var/cache/php-fpm/cotizaciones/storage/app/web"/>
+    </target>
+    <target name="composer" description="Install dependencies with Composer">
+        <exec executable="php">
+            <arg value="-d memory_limit=-1"/>
+            <arg value="${basedir}/composer.phar"/>
+            <arg value="install"/>
+        </exec>
+    </target>
+    <target name="composerDeploy" description="Install dependencies with Composer">
+        <exec executable="php">
+            <arg value="-d memory_limit=-1"/>
+            <arg value="${basedir}/composer.phar"/>
+            <arg value="update"/>
+            <arg value="--no-dev"/>
+            <arg value="-o"/>
+        </exec>
+    </target>
+    <target name="composerAutoload" description="Install dependencies with Composer">
+        <exec executable="php">
+            <arg value="-d memory_limit=-1"/>
+            <arg value="${basedir}/composer.phar"/>
+            <arg value="dump-autoload"/>
+        </exec>
+    </target>
+    <target name="npminstall"  description="instala dependencias de npm">
+        <exec executable="npm" >
+            <arg value="run" />
+        </exec>
+    </target>
+    <target name="phpunit" description="Run unit tests with PHPUnit">
+        <exec executable="${basedir}/vendor/phpunit/phpunit/phpunit" failonerror="true">
+            <arg value="-c${basedir}/build/phpunit.xml"/>
+        </exec>
+    </target>
+</project>
