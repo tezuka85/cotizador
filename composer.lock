@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bfc19441dc60ede8e842830db3f2ff1",
+    "content-hash": "da6c0e8a9c8f02b63214ce2e1cf784f0",
     "packages": [
         {
             "name": "brick/math",
@@ -1503,101 +1503,6 @@
             "time": "2024-03-08T09:58:59+00:00"
         },
         {
-            "name": "jenssegers/mongodb",
-            "version": "4.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mongodb/laravel-mongodb.git",
-                "reference": "64d6dc05a8f08d9cf09f6b2d54f891a1692f6181"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mongodb/laravel-mongodb/zipball/64d6dc05a8f08d9cf09f6b2d54f891a1692f6181",
-                "reference": "64d6dc05a8f08d9cf09f6b2d54f891a1692f6181",
-                "shasum": ""
-            },
-            "require": {
-                "composer-runtime-api": "^2.0.0",
-                "ext-mongodb": "^1.15",
-                "illuminate/cache": "^10.36|^11",
-                "illuminate/container": "^10.0|^11",
-                "illuminate/database": "^10.30|^11",
-                "illuminate/events": "^10.0|^11",
-                "illuminate/support": "^10.0|^11",
-                "mongodb/mongodb": "^1.15",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "12.0.x-dev",
-                "mockery/mockery": "^1.4.4",
-                "mongodb/builder": "^0.2",
-                "orchestra/testbench": "^8.0|^9.0",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^10.3",
-                "spatie/laravel-query-builder": "^5.6"
-            },
-            "suggest": {
-                "mongodb/builder": "Provides a fluent aggregation builder for MongoDB pipelines"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "MongoDB\\Laravel\\MongoDBServiceProvider",
-                        "MongoDB\\Laravel\\MongoDBQueueServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MongoDB\\Laravel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Braun",
-                    "email": "andreas.braun@mongodb.com",
-                    "role": "Leader"
-                },
-                {
-                    "name": "Jérôme Tamarelle",
-                    "email": "jerome.tamarelle@mongodb.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jeremy Mikola",
-                    "email": "jmikola@gmail.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jens Segers",
-                    "homepage": "https://jenssegers.com",
-                    "role": "Creator"
-                }
-            ],
-            "description": "A MongoDB based Eloquent model and Query builder for Laravel",
-            "homepage": "https://github.com/mongodb/laravel-mongodb",
-            "keywords": [
-                "database",
-                "eloquent",
-                "laravel",
-                "model",
-                "mongo",
-                "mongodb"
-            ],
-            "support": {
-                "issues": "https://www.mongodb.com/support",
-                "security": "https://www.mongodb.com/security",
-                "source": "https://github.com/mongodb/laravel-mongodb/tree/4.3.0"
-            },
-            "abandoned": "mongodb/laravel-mongodb",
-            "time": "2024-04-26T15:53:27+00:00"
-        },
-        {
             "name": "kalnoy/nestedset",
             "version": "v6.0.4",
             "source": {
@@ -1720,75 +1625,6 @@
                 "source": "https://github.com/Kyslik/column-sortable/tree/6.6.0"
             },
             "time": "2024-03-14T08:22:23+00:00"
-        },
-        {
-            "name": "labs64/netlicensingclient-php",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Labs64/NetLicensingClient-php.git",
-                "reference": "169e13e71e8a43993b06a344ada1fb3e486ff8ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Labs64/NetLicensingClient-php/zipball/169e13e71e8a43993b06a344ada1fb3e486ff8ea",
-                "reference": "169e13e71e8a43993b06a344ada1fb3e486ff8ea",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6",
-                "php-curl-class/php-curl-class": "^7.3.0"
-            },
-            "require-dev": {
-                "fzaninotto/faker": "^1.6",
-                "phpunit/phpunit": "~5.7",
-                "wp-cli/php-cli-tools": "^0.11.2"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "netlicensing.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Labs64 NetLicensing",
-                    "email": "netlicensing@labs64.com",
-                    "homepage": "http://netlicensing.io"
-                }
-            ],
-            "description": "PHP wrapper for Labs64 NetLicensing RESTful API",
-            "homepage": "http://netlicensing.io",
-            "keywords": [
-                "NetLicensing",
-                "api",
-                "client",
-                "floating",
-                "license",
-                "license management",
-                "license types",
-                "licensing",
-                "licensing as a service",
-                "licensing model",
-                "pay-per-use",
-                "rest",
-                "restful",
-                "software activation",
-                "software license",
-                "subscription"
-            ],
-            "support": {
-                "docs": "https://www.labs64.de/confluence/display/NLICPUB",
-                "email": "netlicensing@labs64.com",
-                "issues": "https://github.com/Labs64/NetLicensingClient-php/issues",
-                "source": "https://github.com/Labs64/NetLicensingClient-php",
-                "wiki": "https://www.labs64.de/confluence/display/NLICPUB"
-            },
-            "time": "2019-08-02T14:12:16+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2073,16 +1909,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.1.22",
+            "version": "v0.1.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "37f94de71758dbfbccc9d299b0e5eb76e02a40f5"
+                "reference": "9bc4df7c699b0452c6b815e64a2d84b6d7f99400"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/37f94de71758dbfbccc9d299b0e5eb76e02a40f5",
-                "reference": "37f94de71758dbfbccc9d299b0e5eb76e02a40f5",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/9bc4df7c699b0452c6b815e64a2d84b6d7f99400",
+                "reference": "9bc4df7c699b0452c6b815e64a2d84b6d7f99400",
                 "shasum": ""
             },
             "require": {
@@ -2125,9 +1961,9 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.1.22"
+                "source": "https://github.com/laravel/prompts/tree/v0.1.23"
             },
-            "time": "2024-05-10T19:22:18+00:00"
+            "time": "2024-05-27T13:53:20+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -3086,6 +2922,103 @@
             "time": "2024-03-23T07:42:40+00:00"
         },
         {
+            "name": "mongodb/laravel-mongodb",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/laravel-mongodb.git",
+                "reference": "64d6dc05a8f08d9cf09f6b2d54f891a1692f6181"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/laravel-mongodb/zipball/64d6dc05a8f08d9cf09f6b2d54f891a1692f6181",
+                "reference": "64d6dc05a8f08d9cf09f6b2d54f891a1692f6181",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": "^2.0.0",
+                "ext-mongodb": "^1.15",
+                "illuminate/cache": "^10.36|^11",
+                "illuminate/container": "^10.0|^11",
+                "illuminate/database": "^10.30|^11",
+                "illuminate/events": "^10.0|^11",
+                "illuminate/support": "^10.0|^11",
+                "mongodb/mongodb": "^1.15",
+                "php": "^8.1"
+            },
+            "replace": {
+                "jenssegers/mongodb": "self.version"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "12.0.x-dev",
+                "mockery/mockery": "^1.4.4",
+                "mongodb/builder": "^0.2",
+                "orchestra/testbench": "^8.0|^9.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.3",
+                "spatie/laravel-query-builder": "^5.6"
+            },
+            "suggest": {
+                "mongodb/builder": "Provides a fluent aggregation builder for MongoDB pipelines"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MongoDB\\Laravel\\MongoDBServiceProvider",
+                        "MongoDB\\Laravel\\MongoDBQueueServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Braun",
+                    "email": "andreas.braun@mongodb.com",
+                    "role": "Leader"
+                },
+                {
+                    "name": "Jérôme Tamarelle",
+                    "email": "jerome.tamarelle@mongodb.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A MongoDB based Eloquent model and Query builder for Laravel",
+            "homepage": "https://github.com/mongodb/laravel-mongodb",
+            "keywords": [
+                "database",
+                "eloquent",
+                "laravel",
+                "model",
+                "mongo",
+                "mongodb"
+            ],
+            "support": {
+                "issues": "https://www.mongodb.com/support",
+                "security": "https://www.mongodb.com/security",
+                "source": "https://github.com/mongodb/laravel-mongodb/tree/4.3.0"
+            },
+            "time": "2024-04-26T15:53:27+00:00"
+        },
+        {
             "name": "mongodb/mongodb",
             "version": "1.15.0",
             "source": {
@@ -3849,67 +3782,6 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
-        },
-        {
-            "name": "php-curl-class/php-curl-class",
-            "version": "7.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-curl-class/php-curl-class.git",
-                "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
-                "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Curl\\": "src/Curl/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Unlicense"
-            ],
-            "authors": [
-                {
-                    "name": "Zach Borboa"
-                }
-            ],
-            "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
-            "homepage": "https://github.com/php-curl-class/php-curl-class",
-            "keywords": [
-                "api",
-                "class",
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "json",
-                "php",
-                "requests",
-                "rest",
-                "restful",
-                "web service",
-                "xml"
-            ],
-            "support": {
-                "issues": "https://github.com/php-curl-class/php-curl-class/issues",
-                "source": "https://github.com/php-curl-class/php-curl-class/tree/7.4.0"
-            },
-            "time": "2017-09-04T21:38:09+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -8172,16 +8044,16 @@
         },
         {
             "name": "composer/pcre",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/pcre.git",
-                "reference": "5b16e25a5355f1f3afdfc2f954a0a80aec4826a8"
+                "reference": "04229f163664973f68f38f6f73d917799168ef24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/pcre/zipball/5b16e25a5355f1f3afdfc2f954a0a80aec4826a8",
-                "reference": "5b16e25a5355f1f3afdfc2f954a0a80aec4826a8",
+                "url": "https://api.github.com/repos/composer/pcre/zipball/04229f163664973f68f38f6f73d917799168ef24",
+                "reference": "04229f163664973f68f38f6f73d917799168ef24",
                 "shasum": ""
             },
             "require": {
@@ -8223,7 +8095,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/pcre/issues",
-                "source": "https://github.com/composer/pcre/tree/3.1.3"
+                "source": "https://github.com/composer/pcre/tree/3.1.4"
             },
             "funding": [
                 {
@@ -8239,7 +8111,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-19T10:26:25+00:00"
+            "time": "2024-05-27T13:40:54+00:00"
         },
         {
             "name": "composer/semver",
@@ -9441,16 +9313,16 @@
         },
         {
             "name": "react/promise",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "e563d55d1641de1dea9f5e84f3cccc66d2bfe02c"
+                "reference": "8a164643313c71354582dc850b42b33fa12a4b63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/e563d55d1641de1dea9f5e84f3cccc66d2bfe02c",
-                "reference": "e563d55d1641de1dea9f5e84f3cccc66d2bfe02c",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/8a164643313c71354582dc850b42b33fa12a4b63",
+                "reference": "8a164643313c71354582dc850b42b33fa12a4b63",
                 "shasum": ""
             },
             "require": {
@@ -9502,7 +9374,7 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/promise/issues",
-                "source": "https://github.com/reactphp/promise/tree/v3.1.0"
+                "source": "https://github.com/reactphp/promise/tree/v3.2.0"
             },
             "funding": [
                 {
@@ -9510,7 +9382,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-11-16T16:21:57+00:00"
+            "time": "2024-05-24T10:39:05+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -10883,11 +10755,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2",
-        "ext-curl": "*",
-        "ext-json": "*",
-        "ext-mbstring": "*",
-        "ext-zip": "*"
+        "php": "^8.2"
     },
     "platform-dev": [],
     "platform-overrides": {

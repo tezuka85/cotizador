@@ -1,0 +1,33 @@
+version: '3.8'  # Especifica la versión de Docker Compose a usar.
+
+services:  # Define los servicios que se ejecutarán en los contenedores Docker.
+  nginx:  # Nombre del primer servicio, en este caso Nginx.
+    image: nginx:alpine  # Imagen de Docker a usar para Nginx, basada en Alpine Linux.
+    container_name: nginx  # Nombre del contenedor.
+    restart: unless-stopped  # Política de reinicio: reinicia el contenedor a menos que se detenga manualmente.
+    tty: true  # Asigna una terminal tty al contenedor.
+    ports:  # Mapea puertos entre el host y el contenedor.
+      - 81:80  # Mapea el puerto 81 del host al puerto 80 del contenedor (Nginx).
+    volumes:  # Monta directorios del host en el contenedor.
+      - ./:/var/www  # Monta el directorio actual en /var/www dentro del contenedor.
+      - ./nginx/conf.d/:/etc/nginx/conf.d/  # Monta el directorio de configuración de Nginx.
+    depends_on:  # Especifica que el servicio Nginx depende del servicio PHP.
+      - php
+    networks:  # Conecta el servicio Nginx a la red definida.
+      - laravel
+
+  php:  # Nombre del segundo servicio, en este caso PHP.
+    build:  # Especifica que el contenedor PHP se construirá desde un Dockerfile.
+      context: .  # Directorio de contexto para la construcción.
+      dockerfile: Dockerfile  # Nombre del Dockerfile a usar.
+    container_name: php  # Nombre del contenedor.
+    volumes:  # Monta directorios del host en el contenedor.
+      - ./:/var/www  # Monta el directorio actual en /var/www dentro del contenedor.
+    ports:  # Mapea puertos entre el host y el contenedor.
+      - "9000:9000"  # Mapea el puerto 9000 del host al puerto 9000 del contenedor (PHP-FPM).
+    networks:  # Conecta el servicio PHP a la red definida.
+      - laravel
+
+networks:  # Define las redes a usar en los servicios.
+  laravel:  # Nombre de la red.
+    driver: bridge  # Tipo de driver para la red, en este caso bridge.
