@@ -75,10 +75,10 @@ class CotizadorController extends Controller
         try {
             $comercio = Comercio::withTrashed()->where('clave',$request->comercio_id)->first();
             $groupLog .= 'comercio : '.$comercio->id.'-'.$comercio->clave.'-------------------'.PHP_EOL;
-            $mensajerias = Mensajeria::whereNotIn('clave',['TOOKAN','UBER','QUALITY','CARGAMOS','IMILE','YANGO'])->get();
+            $mensajerias = Mensajeria::whereNotIn('clave',['TOOKAN','UBER','QUALITY','CARGAMOS','IMILE','YANGO','BIGSMART','CAMINANDO',
+            'LOGIFY','AMPM'])->get();
             $comercioUsuario =  $this->buscarComercioUsuario($comercio->id);
             $mensajeriasIds = $mensajerias->pluck('id','id');
-            //die(print_r($comercio));
 
             if((in_array($comercio->id_configuracion,ConfiguracionComercio::$comerciosPrepago))){
                 $groupLog.="Comercio prepago con llaves t1envios, ".$comercio->id.'-'.$comercio->clave.PHP_EOL;

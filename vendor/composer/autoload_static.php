@@ -935,7 +935,6 @@ class ComposerStaticInit56a047ce79d80a8aee7e467dc8755a2d
         'App\\Listeners\\SaveLogRequest' => __DIR__ . '/../..' . '/app/Listeners/SaveLogRequest.php',
         'App\\Observers\\Mensajeria\\CostoMensajeriaObserver' => __DIR__ . '/../..' . '/app/Observers/Mensajeria/CostoMensajeriaObserver.php',
         'App\\Observers\\Mensajeria\\CostoMensajeriaPorcentajeObserver' => __DIR__ . '/../..' . '/app/Observers/Mensajeria/CostoMensajeriaPorcentajeObserver.php',
-        'App\\PasswordReset' => __DIR__ . '/../..' . '/app/PasswordReset.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

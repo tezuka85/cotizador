@@ -223,7 +223,6 @@ return array(
     'App\\Listeners\\SaveLogRequest' => $baseDir . '/app/Listeners/SaveLogRequest.php',
     'App\\Observers\\Mensajeria\\CostoMensajeriaObserver' => $baseDir . '/app/Observers/Mensajeria/CostoMensajeriaObserver.php',
     'App\\Observers\\Mensajeria\\CostoMensajeriaPorcentajeObserver' => $baseDir . '/app/Observers/Mensajeria/CostoMensajeriaPorcentajeObserver.php',
-    'App\\PasswordReset' => $baseDir . '/app/PasswordReset.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
